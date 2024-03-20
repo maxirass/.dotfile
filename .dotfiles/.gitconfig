@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = ~/.gitignore_global	
+[user]
+	name = Maximilian Raßhofer
+	email = rasshofermaxi@gmail.com

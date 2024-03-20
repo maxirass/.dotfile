@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# Because Git submodule commands cannot operate without a work tree, they must
+# be run from within $HOME (assuming this is the root of your dotfiles)
+cd "$HOME"
+
+echo "Init submodules"
+~/.local/bin/yadm submodule update --recursive --init
+
+# check if python3 is installed
+if command -v python3 &> /dev/null; then
+    echo "Python3 is installed"
+else
+    apt update -y
+    apt upgrade
+    apt-get install python3 -y
+fi
+
+# check if pyenv is installed
+if command -v pyenv &> /dev/null; then
+    echo "pyenv is installed"
+else
+    curl https://pyenv.run | bash
+fi
+
+# check if poetry is installed
+if command -v poetry &> /dev/null; then
+    echo "poetry is installed"
+else
+    curl -sSL https://install.python-poetry.org | python3 -
+fi
+
+# check if starship is installed
+if command -v starship &> /dev/null; then
+    echo "starship is installed"
+else
+    curl -sS https://starship.rs/install.sh | sh
+fi
+
+# done
+echo "Bootstrapping complete"
