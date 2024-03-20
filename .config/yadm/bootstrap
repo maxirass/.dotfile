@@ -12,9 +12,9 @@ if command -v zsh &> /dev/null
 then
     echo "Zsh is installed"
 else
-    apt update -y
-    apt upgrade
-    apt-get install zsh -y
+    sudo apt update -y
+    sudo apt upgrade
+    sudo apt-get install zsh -y
 fi
 
 # check if python3 is installed
@@ -22,9 +22,9 @@ if command -v python3 &> /dev/null
 then
     echo "Python3 is installed"
 else
-    apt update -y
-    apt upgrade
-    apt-get install python3 -y
+    sudo apt update -y
+    sudo apt upgrade
+    sudo apt-get install python3 -y
 fi
 
 # check if pyenv is installed
@@ -32,7 +32,7 @@ if command -v pyenv &> /dev/null
 then
     echo "pyenv is installed"
 else
-    curl https://pyenv.run | bash
+    sudo curl https://pyenv.run | bash
 fi
 
 # check if poetry is installed
@@ -40,7 +40,7 @@ if command -v poetry &> /dev/null
 then
     echo "poetry is installed"
 else
-    curl -sSL https://install.python-poetry.org | python3 -
+    sudo curl -sSL https://install.python-poetry.org | python3 -
 fi
 
 # check if starship is installed
@@ -48,9 +48,9 @@ if command -v starship &> /dev/null
 then
     echo "starship is installed"
 else
-    curl -sS https://starship.rs/install.sh | sh
+    sudo curl -sS https://starship.rs/install.sh | sh
 fi
 
 # done
 echo "Bootstrapping complete"
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
