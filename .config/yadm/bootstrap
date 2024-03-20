@@ -35,4 +35,4 @@ echo "starship install done"
 
 # done
 echo "Bootstrapping complete"
-sudo exec $(which zsh)
+chsh -s $(which zsh)
