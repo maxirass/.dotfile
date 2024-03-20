@@ -5,3 +5,5 @@
 [user]
 	name = Maximilian Raßhofer
 	email = rasshofermaxi@gmail.com
+[pull]
+	rebase = false
