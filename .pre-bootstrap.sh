@@ -4,7 +4,7 @@
 mkdir -p ~/.local/bin
 
 # Download yadm
-curl -fLo ~/.local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x ~/.local/bin/yadm
+curl -sfLo ~/.local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x ~/.local/bin/yadm
 
 # Clone dotfiles repository
 ~/.local/bin/yadm clone --bootstrap https://github.com/maxirass/dotfile.git
