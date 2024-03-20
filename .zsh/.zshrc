@@ -29,7 +29,7 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 ### --- load poetry --------
-export PATH="$HOME/$USER/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 fpath+=~/.zfunc
 autoload -Uz compinit && compinit
 
