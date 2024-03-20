@@ -7,7 +7,13 @@ mkdir -p ~/.local/bin
 sudo curl -sfLo ~/.local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && sudo chmod a+x ~/.local/bin/yadm
 
 # Clone dotfiles repository
-~/.local/bin/yadm clone --bootstrap https://github.com/maxirass/dotfile.git
+~/.local/bin/yadm clone https://github.com/maxirass/dotfile.git
+
+# Bootstrap executable
+sudo chmod a+x ~/.config/yadm/bootstrap
+
+# Execute bootstrap
+~/.local/bin/yadm bootstrap
 
 # Clean up by removing yadm
 rm -rf ~/.local/bin/yadm
