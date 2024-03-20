@@ -33,6 +33,11 @@ echo "poetry install done"
 sudo curl -sS https://starship.rs/install.sh | sh
 echo "starship install done"
 
+#updating yadm url and config
+echo "Updating the yadm repo origin URL"
+yadm remote set-url origin "https://github.com/maxirass/.dotfile.git"
+yadm config yadm.cipher openssl
+
 # done
 echo "Bootstrapping complete"
 chsh -s $(which zsh)
