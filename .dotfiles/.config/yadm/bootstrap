@@ -7,6 +7,15 @@ cd "$HOME"
 echo "Init submodules"
 ~/.local/bin/yadm submodule update --recursive --init
 
+# check if zsh is installed
+if command -v zsh &> /dev/null; then
+    echo "Zsh is installed"
+else
+    apt update -y
+    apt upgrade
+    apt-get install zsh -y
+fi
+
 # check if python3 is installed
 if command -v python3 &> /dev/null; then
     echo "Python3 is installed"
