@@ -10,6 +10,7 @@ $directory\
 $git_branch\
 $git_status \
 $python\
+$conda\
 $memory_usage\
 [](#1C3A5E)$time[ ](#1C3A5E)$cmd_duration
 [└─>](bold green) """
@@ -23,7 +24,7 @@ error_symbol = "🔥 "
 
 [time]
 disabled = false
-time_format = "%r" # Hour:Minute Format
+time_format = "%T"
 style = "bg:#1d2230"
 format = '[[ 󱑍 $time ](bg:#1C3A5E fg:#8DFBD2)]($style)'
 
@@ -35,9 +36,6 @@ format = 'last command: [$duration](bold yellow)'
 [os]
 format = '[$symbol](bold white) '   
 disabled = false
-
-[os.symbols]
-Macos = '󰀵'
 
 # Shows the hostname
 [hostname]
@@ -81,6 +79,11 @@ deleted = ' '
 
 
 # ---
+[conda]
+symbol = '🅒'
+style = 'bold green'
+ignore_base = true
+format = '[$symbol$environment]($style)'
 
 [memory_usage]
 symbol = "󰍛 "
