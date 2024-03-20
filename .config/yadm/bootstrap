@@ -13,6 +13,10 @@ sudo apt upgrade -y
 sudo apt-get install zsh -y
 echo "zsh install done"
 
+# install yadm
+sudo apt-get install yadm -y
+echo "yadm installed"
+
 # check if python3 is installed
 sudo apt-get install python3 -y
 echo "python install done"
@@ -31,4 +35,4 @@ echo "starship install done"
 
 # done
 echo "Bootstrapping complete"
-sudo chsh $(which zsh)
+sudo exec $(which zsh)
