@@ -48,3 +48,4 @@ fi
 
 # done
 echo "Bootstrapping complete"
+chsh -s $(which zsh)
