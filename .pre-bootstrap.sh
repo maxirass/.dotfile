@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Create directory if it doesn't exist
-mkdir -p ~/.local/bin/yadm
+mkdir -p ~/.local/bin
 
 # Download yadm
 curl -fLo ~/.local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x ~/.local/bin/yadm
