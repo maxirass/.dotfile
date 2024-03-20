@@ -8,47 +8,52 @@ echo "Init submodules"
 ~/.local/bin/yadm submodule update --recursive --init
 
 # check if zsh is installed
-if command -v zsh &> /dev/null 
+if ! command -v zsh &> /dev/null 
 then
-    echo "Zsh is installed"
-else
     sudo apt update -y
     sudo apt upgrade
     sudo apt-get install zsh -y
+    echo "zsh install done"
+else
+    echo "Zsh is installed"
 fi
 
 # check if python3 is installed
-if command -v python3 &> /dev/null 
+if ! command -v python3 &> /dev/null 
 then
-    echo "Python3 is installed"
-else
     sudo apt update -y
     sudo apt upgrade
     sudo apt-get install python3 -y
+    echo "python install done"
+else
+    echo "Python3 is installed"
 fi
 
 # check if pyenv is installed
-if command -v pyenv &> /dev/null 
+if ! command -v pyenv &> /dev/null 
 then
-    echo "pyenv is installed"
-else
     sudo curl https://pyenv.run | bash
+    echo "pyenv install done"
+else
+    echo "pyenv is installed"
 fi
 
 # check if poetry is installed
-if command -v poetry &> /dev/null 
+if ! command -v poetry &> /dev/null 
 then
-    echo "poetry is installed"
-else
     sudo curl -sSL https://install.python-poetry.org | python3 -
+    echo "poetry install done"
+else
+    echo "poetry is installed"
 fi
 
 # check if starship is installed
-if command -v starship &> /dev/null 
+if ! command -v starship &> /dev/null 
 then
-    echo "starship is installed"
-else
     sudo curl -sS https://starship.rs/install.sh | sh
+    echo "starship install done"
+else
+    echo "starship is installed"
 fi
 
 # done
