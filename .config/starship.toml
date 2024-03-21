@@ -95,3 +95,4 @@ format = "$symbol [${ram}(|${swap})]($style) "
 [python]
 symbol = " "
 pyenv_version_name = true
+detect_files = ['.python-version', '__init__.py', 'pyproject.toml']
