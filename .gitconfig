@@ -2,6 +2,7 @@
 	defaultBranch = main
 [core]
 	excludesfile = ~/.gitignore_global	
+	sshCommand = ssh.exe
 [user]
 	name = Maximilian Rasshofer 
 	email = rasshofermaxi@gmail.com
