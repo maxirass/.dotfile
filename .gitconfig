@@ -5,5 +5,8 @@
 [user]
 	name = Maximilian Raßhofer
 	email = rasshofermaxi@gmail.com
+	#signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO4MG8axYT9E50dlt57r9+HBSKdL7KiDjU1dbgTTRitQ
 [pull]
 	rebase = false
+[gpg]
+	format = ssh
