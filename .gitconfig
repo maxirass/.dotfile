@@ -10,6 +10,7 @@
 	rebase = false
 [gpg]
 	format = ssh
-
 [gpg "ssh"]
-	program = "/mnt/c/Users/Maxi/AppData/Local/1Password/app/8/op-ssh-sign-wsl"
+  program = "/mnt/c/Users/Maxi/AppData/Local/1Password/app/8/op-ssh-sign-wsl"
+[commit]
+  gpgsign = true
