@@ -3,14 +3,14 @@
 [core]
 	excludesfile = ~/.gitignore_global	
 [user]
-	name = Maximilian Raßhofer
+	name = Maximilian Rasshofer 
 	email = rasshofermaxi@gmail.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO4MG8axYT9E50dlt57r9+HBSKdL7KiDjU1dbgTTRitQ
+#	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO4MG8axYT9E50dlt57r9+HBSKdL7KiDjU1dbgTTRitQ
 [pull]
 	rebase = false
-[gpg]
-	format = ssh
-[commit]
-	gpgsign = true
-[gpg "ssh"]
-  program = "/mnt/c/Users/Maxi/AppData/Local/1Password/app/8/op-ssh-sign-wsl"
+#[gpg]
+#	format = ssh
+#[commit]
+#	gpgsign = true
+#[gpg "ssh"]
+ # program = "/mnt/c/Users/Maxi/AppData/Local/1Password/app/8/op-ssh-sign-wsl"
