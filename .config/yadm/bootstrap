@@ -35,7 +35,7 @@ echo "starship install done"
 
 #updating yadm url and config
 echo "Updating the yadm repo origin URL"
-yadm remote set-url origin "https://github.com/maxirass/.dotfile.git"
+yadm remote set-url origin "git@github.com:maxirass/.dotfile.git"
 yadm config yadm.cipher openssl
 
 # done
