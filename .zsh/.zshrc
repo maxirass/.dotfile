@@ -36,8 +36,5 @@ autoload -Uz compinit && compinit
 ### add local bin to path
 export PATH=$HOME/bin:$PATH
 
-### export 1password ssh-agent ----
-export SSH_AUTH_SOCK="$HOME/.1password/agent.sock"
-
 ### ---- Load Starship -----------------------------------
 eval "$(starship init zsh)"
