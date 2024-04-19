@@ -17,18 +17,6 @@ echo "zsh install done"
 sudo apt-get install yadm -y
 echo "yadm installed"
 
-# check if python3 is installed
-sudo apt-get install python3 -y
-echo "python install done"
-
-# check if pyenv is installed
-sudo curl https://pyenv.run | bash
-echo "pyenv install done"
-
-# check if poetry is installed
-sudo curl -sSL https://install.python-poetry.org | python3 -
-echo "poetry install done"
-
 # check if starship is installed
 sudo curl -sS https://starship.rs/install.sh | sh
 echo "starship install done"
