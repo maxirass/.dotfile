@@ -21,6 +21,9 @@ echo "yadm installed"
 sudo curl -sS https://starship.rs/install.sh | sh
 echo "starship install done"
 
+# install TPM (Tmux Package Manager)
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+
 #updating yadm url and config
 echo "Updating the yadm repo origin URL"
 yadm remote set-url origin "git@github.com:maxirass/.dotfile.git"
